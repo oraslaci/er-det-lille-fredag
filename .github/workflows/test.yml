@@ -1,7 +1,7 @@
-name: build test and publish
+name: build and test
 on: [push]
 jobs:
-  test-and-publish:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -9,5 +9,6 @@ jobs:
         with:
           node-version: '16'
           cache: 'npm'
+      - run: npm install
       - run: npm run build
       - run: npm run test
