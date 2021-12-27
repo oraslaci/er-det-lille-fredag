@@ -1,7 +1,7 @@
-name: learn-github-actions
+name: build test and publish
 on: [push]
 jobs:
-  check-bats-version:
+  test-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -10,4 +10,5 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - run: npm install
+      - run: npm run build
       - run: npm run test
