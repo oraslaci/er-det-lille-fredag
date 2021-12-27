@@ -1,8 +1,8 @@
 {
   "name": "er-det-lille-fredag",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
-  "main": "src/main.js",
+  "main": "dist/isItLittleFriday.bundle.js",
   "author": "",
   "license": "ISC",
   "prefer-stable": true,
